@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment2">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/labelBuyPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="36dp"
+            android:text="Cumpara"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/labelSellPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="Vinde"
+            app:layout_constraintStart_toStartOf="@+id/labelBuyPrice"
+            app:layout_constraintTop_toBottomOf="@+id/labelBuyPrice" />
+
+        <TextView
+            android:id="@+id/txtBuyPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="52dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/labelBuyPrice"
+            app:layout_constraintTop_toTopOf="@+id/labelBuyPrice" />
+
+        <TextView
+            android:id="@+id/txtSellPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/txtBuyPrice"
+            app:layout_constraintTop_toBottomOf="@+id/txtBuyPrice" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
